@@ -4,9 +4,6 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-  pre_build:
-    commands:
-      - sudo docker-compose up
   build:
     commands:
       - mvn clean package install
